@@ -4,8 +4,35 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Hellow dear Ivan\"",
+    "preapp": "echo \"Запуск перед апп\"",
+    "app": "node js/app.js",
+    "postapp": "echo \"Запуск после апп\"",
+    "script-1": "echo \" Run scrip-1 *****\"",
+    "script-2": "echo \" Run scrip-2 *****\"",
+    "all": "npm run script-1 && npm run script-2",
+    "build": "babel src -d dist"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Ivan-Oliinyk/npm-practic.git"
+  },
+  "keywords": [],
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Ivan-Oliinyk/npm-practic/issues"
+  },
+  "homepage": "https://github.com/Ivan-Oliinyk/npm-practic#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "joi": "^17.4.2",
+    "shortid": "^2.2.16",
+    "uuid": "^8.3.2"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.15.4",
+    "@babel/core": "^7.15.5",
+    "@babel/preset-env": "^7.15.6"
+  }
 }
